@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PyLadies Stockholm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="icon" href="assets/static/img/favicon.svg" />
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(
+          document.querySelectorAll(".navbar-burger"),
+          0
+        );
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      });
+    </script>
+    <style>
+      a {
+        color: #dc4154;
+      }
+      a:hover {
+        color: #f5be55;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container hero is-fullheight is-fullhd">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://pyladies.se">
+            <img
+              src="assets/static/img/pyladies_stockholm.png"
+              alt="PyLadies Stockholm logo. PyLadies wordmark with a skyline of Stockholm on top and #STHLM underneath."
+            />
+          </a>
+
+          <a
+            role="button"
+            class="navbar-burger"
+            aria-label="menu"
+            aria-expanded="false"
+            data-target="navbarBasicExample"
+          >
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="#" class="navbar-item"> Home </a>
+            <a href="#about" class="navbar-item"> About </a>
+            <a
+              href="https://www.meetup.com/pyladiesstockholm/events"
+              class="navbar-item"
+            >
+              Events
+            </a>
+            <a href="https://ava.pyladies.se" class="navbar-item">
+              Avatar Maker
+            </a>
+            <a href="http://www.pyladies.com/CodeOfConduct" class="navbar-item">
+              Code of Conduct
+            </a>
+          </div>
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <a href="https://www.meetup.com/pyladiesstockholm">
+                <img
+                  style="margin: 5px"
+                  src="assets/static/brands/meetup.png"
+                  width="28px"
+                  alt="meetup logo"
+                />
+              </a>
+              <a href="https://www.linkedin.com/company/pyladies-stockholm">
+                <img
+                  style="margin: 5px"
+                  src="assets/static/brands/linkedin.png"
+                  width="26px"
+                  alt="linkedin logo"
+                />
+              </a>
+              <a href="https://slackin.pyladies.com">
+                <img
+                  style="margin: 5px"
+                  src="assets/static/brands/slack.png"
+                  width="26px"
+                  alt="slack logo"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="section hero">
+        <div class="columns is-vcentered">
+          <div class="column has-text-centered">
+            <img src="assets/static/img/pyladies_stockholm.png" width="600" />
+          </div>
+          <div class="column is-one-third">
+            <h1 class="title">PyLadies Stockholm</h1>
+            <p class="subtitle">
+              <a href="https://pyladies.com">PyLadies</a> is an international
+              mentorship group with a focus on helping more women become active
+              participants and leaders in the Python open-source community.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="hero is-medium is-size-4 has-text-centered"
+        style="background-color: #f5f5f5; padding: 20px;"
+      >
+          <div class="columns is-vcentered">
+         
+            <div class="column">
+              Join our next events on Meetup!
+              <br />
+              <a class="button is-danger" href="https://meetup.com/pyladiesstockholm" style="padding: 15px;margin: 15px;">See events</a>
+            </div>
+            <div class="column is-one-third">
+              <img src="assets/static/brands/meetup.png" width="180px" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="hero is-medium"
+        style="
+          background-image: url('assets/static/img/yellow_blobs.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+        "
+      >
+        <div class="hero-body is-size-4">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <div style="padding: 0px 20px 0px 20px">
+                <h1 class="title" id="about">About</h1>
+                Our mission is to promote, educate and advance a diverse Python
+                community through outreach, education, conferences, events, and
+                social gatherings. <br /><br />
+                PyLadies also aims to provide a friendly support network for
+                women and a bridge to the larger Python world. Anyone with an
+                interest in Python is encouraged to participate! Welcome!
+              </div>
+            </div>
+            <div class="column">
+              <img src="assets/static/img/people.svg" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+      class="hero is-medium is-size-4 has-text-centered"
+      style="background-color: #f5f5f5; padding: 20px;"
+    >
+        <div class="columns is-vcentered">
+          <div class="column">
+            Find us in the
+            <span style="color: #dc4154">#city-stockholm</span>
+            channel in the global Slack!
+            <br />
+            <a class="button is-danger" href="https://slackin.pyladies.com" style="padding: 15px;margin: 15px;">Join Slack</a>
+          </div>
+          <div class="column is-one-third">
+            <img src="assets/static/brands/slack.png" width="180px" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section
+        class="hero is-medium"
+        
+      >
+        <div class="hero-body is-size-4">
+          <div class="columns is-vcentered">
+            <div class="column has-text-centered">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/TsUNT-IM2Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="column">
+              <div style="padding: 0px 20px 0px 20px">
+                <h1 class="title" id="about">PyLadies Ava</h1>
+                We created a tool for you to make your own PyLadies avatar! 
+                <br />
+              <a class="button is-danger" href="https://ava.pyladies.se" style="padding: 15px;margin: 15px;">Make me</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div
+          class="content has-text-centered is-flex-align-items-flex-end mt-auto"
+        >
+          <p>
+            <strong>PyLadies Stockholm</strong> | The
+            <a href="#">
+              source code
+              <img
+                src="assets/static/brands/github.svg"
+                height="15px"
+                width="15px"
+                alt="github logo"
+              />
+            </a>
+            is licensed
+            <a
+              href="https://github.com/python-sverige/pyladies-sthlm/blob/main/LICENSE"
+              >MIT</a
+            >. The website content is licensed
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+              >CC BY-NC-ND 4.0</a
+            >.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
